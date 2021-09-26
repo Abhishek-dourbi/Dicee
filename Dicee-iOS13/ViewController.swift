@@ -19,15 +19,16 @@ class ViewController: UIViewController {
     // Calls when view loads
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Change the image inside the image view
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix");
-        diceImageView1.alpha = 0.5;
-        
-        // Change the opacity of the image view
-        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo");
     }
 
-
+    // Fires when roll button pressed
+    
+    // Created the same way as the IBOutlet
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Roll Button Tapped");
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix");
+        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo");
+    }
+    
 }
 
